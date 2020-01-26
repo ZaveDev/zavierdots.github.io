@@ -41,11 +41,11 @@ function userChoice2(){
 //This function displays image of the computers choice 
 function computerImage(Y){
     if (Y == "sw") 
-    return compSelection_div.innerHTML = '<img src="SMS/assets/css/images/sword.png" alt="Sword" height="50" width="50"></img>';
+    return compSelection_div.innerHTML = '<img src="assets/css/images/sword.png" alt="Sword" height="50" width="50"></img>';
     if (Y == "ma") 
-    return compSelection_div.innerHTML = '<img src="SMS/assets/css/images/magic.png" alt="Magic" height="50" width="50"></img>';
+    return compSelection_div.innerHTML = '<img src="assets/css/images/magic.png" alt="Magic" height="50" width="50"></img>';
     if(Y == "sh")
-    return compSelection_div.innerHTML = '<img src="SMS/assets/css/images/shield.png" alt="Shield" height="50" width="50"></img>';
+    return compSelection_div.innerHTML = '<img src="assets/css/images/shield.png" alt="Shield" height="50" width="50"></img>';
 }
 
 //This funtion changes the userChoice and compChoice into human readable words
