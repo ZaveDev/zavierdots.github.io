@@ -41,19 +41,19 @@ function game(userChoice) {
 function main() {
     sword_div.addEventListener('click', function() {
         game("sw");
-        userSelection_div.innerHTML = '<img src="SMS/assets/css/images/sword.png" alt="Sword" height="50" width="50"></img>';
+        userSelection_div.innerHTML = '<img src="assets/css/images/sword.png" alt="Sword" height="50" width="50"></img>';
         goToLevel2();
     });
     
     magic_div.addEventListener('click', function() {
         game("ma");
-        userSelection_div.innerHTML = '<img src="SMS/assets/css/images/magic.png" alt="Magic" height="50" width="50"></img>';
+        userSelection_div.innerHTML = '<img src="assets/css/images/magic.png" alt="Magic" height="50" width="50"></img>';
         goToLevel2();
     });
 
     shield_div.addEventListener('click', function() {
         game("sh");
-        userSelection_div.innerHTML = '<img src="SMS/assets/css/images/shield.png" alt="Shield" height="50" width="50"></img>';
+        userSelection_div.innerHTML = '<img src="assets/css/images/shield.png" alt="Shield" height="50" width="50"></img>';
         goToLevel2();
     });
     reset_div.addEventListener('click', function(){
