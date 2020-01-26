@@ -1659,3 +1659,7 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		#selected{
+			color: rgb(190, 125, 3);
+		}
