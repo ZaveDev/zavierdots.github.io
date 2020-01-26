@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aerial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>SWORD-MAGIC-SHIELD</h1>
+						<span>User</span> <div class= "choice" id="userSqur"></div> 
+						<div class="scoreBoard" id="scoreBoard">
+							<span id="userScore">0</span>:<span id="compScore">0</span>
+						</div>	
+						<div class= "choice" id="compSqur"></div> <span>Comp</span>
+						<div class="result">
+							<p>Who is gonna win?</p>
+						</div>
+						<nav>
+							<ul>
+								<li><img src="assets/css/images/sword.png" id="sw" alt="Sword" height="75" width="75"></li>
+								<li><img src="assets/css/images/magic.png" id="ma" alt="Magic" height="75" width="75"></li>
+								<li><img src="assets/css/images/shield.png" id="sh" alt="Shield" height="75" width="75"></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+							<a href="#" class="icon brands fa-github"><span class="label">Github</span></a>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+		<script src="assets/js/setup.js"></script>
+		<script src="assets/js/level1.js"></script>
+
+	</body>
+</html>
