@@ -41,11 +41,11 @@ function userChoice2(){
 //This function displays image of the computers choice 
 function computerImage(Y){
     if (Y == "sw") 
-    return compSelection_div.innerHTML = '<img src="assets/css/images/sword.png" alt="Sword" height="50" width="50"></img>';
+    return compSelection_div.innerHTML = '<img src="SMS/assets/css/images/sword.png" alt="Sword" height="50" width="50"></img>';
     if (Y == "ma") 
-    return compSelection_div.innerHTML = '<img src="assets/css/images/magic.png" alt="Magic" height="50" width="50"></img>';
+    return compSelection_div.innerHTML = '<img src="SMS/assets/css/images/magic.png" alt="Magic" height="50" width="50"></img>';
     if(Y == "sh")
-    return compSelection_div.innerHTML = '<img src="assets/css/images/shield.png" alt="Shield" height="50" width="50"></img>';
+    return compSelection_div.innerHTML = '<img src="SMS/assets/css/images/shield.png" alt="Shield" height="50" width="50"></img>';
 }
 
 //This funtion changes the userChoice and compChoice into human readable words
@@ -142,117 +142,3 @@ function loseShield(userChoice, compChoice) {
     loseBorder()
 }
 
-
-
-function goToLevel2(){
-    let XS = userScore;
-    let SX = compScore;
-    if (XS == 5) {
-        levelButton_div.classList.add('levelButton');
-        levelButton_div.innerHTML = '<a href="step2.html">level2</a>';
-    }
-    if (SX == 5) {
-        userScore = 0;
-        compScore = 0;
-        userScore_span.innerHTML = userScore;
-        compScore_span.innerHTML = compScore;
-        result_p.innerHTML = "Who is gonna win?";
-        userSelection_div.innerHTML = '';
-        compSelection_div.innerHTML = '';
-    }
-}
-
-function win2(){
-    compHP -= 5;
-    userHP_div.innerHTML = userHP;
-    userRoll_div.classList.remove("loseRoll");
-    userRoll_div.classList.remove("drawRoll");
-    userRoll_div.classList.add("winRoll");
-    compHP_div.innerHTML = compHP;
-    compRoll_div.classList.remove("winRoll");
-    compRoll_div.classList.remove("drawRoll");
-    compRoll_div.classList.add("loseRoll");
-    if (userHP <= 0){
-        result_div.innerHTML = "you're dead!";    
-    }
-    if (compHP <= 0){
-        result_div.innerHTML = "you killed him";    
-    } else {
-    result_div.innerHTML = "You hit!";
-    }
-}
-function magicWin2(){
-    userHP += 10;
-    userHP_div.innerHTML = userHP;
-    userRoll_div.classList.remove("loseRoll");
-    userRoll_div.classList.remove("drawRoll");
-    userRoll_div.classList.add("winRoll");
-    compHP_div.innerHTML = compHP;
-    compRoll_div.classList.remove("winRoll");
-    compRoll_div.classList.remove("drawRoll");
-    compRoll_div.classList.add("loseRoll");
-    if (userHP <= 0){
-        result_div.innerHTML = "you're dead!";    
-    }
-    if (compHP <= 0){
-        result_div.innerHTML = "you killed him";    
-    } else {
-    result_div.innerHTML = "You healed!";
-    }
-}
-function sheildWin2(){
-    userHP_div.innerHTML = userHP;
-    userRoll_div.classList.remove("loseRoll");
-    userRoll_div.classList.remove("drawRoll");
-    userRoll_div.classList.add("winRoll");
-    compHP_div.innerHTML = compHP;
-    compRoll_div.classList.remove("winRoll");
-    compRoll_div.classList.remove("drawRoll");
-    compRoll_div.classList.add("loseRoll");
-    if (userHP <= 0){
-        result_div.innerHTML = "you're dead!";    
-    }
-    if (compHP <= 0){
-        result_div.innerHTML = "you killed him";    
-    } else {
-    result_div.innerHTML = "You blocked!";
-    }
-}
-function draw2(){
-    userHP_div.innerHTML = userHP;
-    userRoll_div.classList.remove("loseRoll");
-    userRoll_div.classList.remove("winRoll");
-    userRoll_div.classList.add("drawRoll");
-    compHP_div.innerHTML = compHP;
-    compRoll_div.classList.remove("winRoll");
-    compRoll_div.classList.remove("loseRoll");
-    compRoll_div.classList.add("drawRoll");
-    if (userHP <= 0){
-        result_div.innerHTML = "you're dead!";    
-    } else if (compHP <= 0){
-        result_div.innerHTML = "you killed him";    
-    } else {
-    result_div.innerHTML = "Your both miss";
-    }
-}
-
-function lose2(){
-    userHP -= 5;
-    userHP_div.innerHTML = userHP;
-    userRoll_div.classList.remove("winRoll");
-    userRoll_div.classList.remove("drawRoll");
-    userRoll_div.classList.add("loseRoll");
-    compHP_div.innerHTML = compHP;
-    compRoll_div.classList.remove("loseRoll");
-    compRoll_div.classList.remove("drawRoll");
-    compRoll_div.classList.add("winRoll");
-    if (userHP <= 0){
-        result_div.innerHTML = "you're dead!";    
-    }
-    else if (compHP <= 0){
-        result_div.innerHTML = "you killed him";    
-    } else {
-        result_div.innerHTML = "You miss";
-    }
-    
-}
