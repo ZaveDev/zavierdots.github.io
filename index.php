@@ -50,14 +50,17 @@
 										<div class="field half">
 											<label for="name">Name</label>
 											<input type="text" name="name" id="name" />
+											<span class="error"><?= $name_error ?></span> 
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
 											<input type="text" name="email" id="email" />
+											<span class="error"><?= $email_error ?></span>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="4"></textarea>
+											<span class="error"><?= $message_error ?></span>
 										</div>
 									</div>
 									<ul class="actions">
