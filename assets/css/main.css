@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -533,7 +527,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff !important;
 			border-color: #ffffff !important;
-			color: #1b1f22;
+			color: #ffffff;
 			content: '\f00c';
 		}
 
@@ -553,27 +547,27 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgb(255, 255, 255) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgb(255, 255, 255) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgb(255, 255, 255) !important;
 		opacity: 1.0;
-	}
+	}	
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgb(255, 255, 255) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgb(255, 255, 255) !important;
 		opacity: 1.0;
 	}
 
@@ -1663,3 +1657,35 @@ input, select, textarea {
 		#selected{
 			color: rgb(190, 125, 3);
 		}
+
+		a.animated-button.thar-two {
+			color: #fff;
+			cursor: pointer;
+			display: block;
+			position: relative;
+			transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+		}
+		a.animated-button.thar-two:hover {
+			color: #000 !important;
+			background-color: transparent;
+			text-shadow: ntwo;
+		}
+		a.animated-button.thar-two:hover:before {
+			top: 0%;
+			bottom: auto;
+			height: 100%;
+		}
+		a.animated-button.thar-two:before {
+			display: block;
+			position: absolute;
+			left: 0px;
+			bottom: 0px;
+			height: 0px;
+			width: 100%;
+			z-index: -1;
+			content: '';
+			color: #000 !important;
+			background: rgb(190, 125, 3);
+			transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+		}
+		
