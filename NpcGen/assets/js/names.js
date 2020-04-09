@@ -106,7 +106,7 @@ function barbarian() {
             l6 = "Mindless<br>Rage";
             l10 = "Intimidating<br>Presence";
             l14 = "Retaliation";
-            cls = "Breserker"
+            cls = "Berserker"
             break;
         case "tw":
             tw = ["Bear", "Egale", "Wolf"];
