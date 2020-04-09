@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>character generator</title>
+        <link rel="stylesheet" href="assets/css/SMSstyle.css">
+    </head>
+    <body id="back" class="body">
+        <header>
+            <h1>Character Gen</h1> 
+            <button id="gen">GEN</button>
+        </header>
+        <div class="scoreBoard" id="scoreBoard">
+            <div class="choices">
+                <div class="choice"><span class="nam1">SP<br><span id="spd">30</span></span></div>
+                <div class="choice"><span class="nam1">AC<br><span id="ac">10</span></span></div>            
+            <div class="nam" id="nam">
+                ...
+            </div>
+                <div class="choice"><span class="nam1">HP<br><span id="hp">0</span></span></div>
+                <div class="choice"><span class="nam1">PF<br><span id="prof">2</span></span></div>
+            </div>
+            
+            <span class="nam2">
+                Class<br>
+                <span id="lvl">lvl <span id="level"></span> </span><span id="race"></span><span> </span><span id="cls"> ...</span>
+            </span>         
+
+            <div class="choices">
+                <div class="stat">STR <br> <span id="strVal">0</span><br> M: <span id="strMod">0</span> S: <span id="strSave">0</span></div>
+                <div class="stat">DEX <br> <span id="dexVal">0</span><br> M: <span id="dexMod">0</span> S: <span id="dexSave">0</span></div>
+                <div class="stat">CON <br> <span id="conVal">0</span><br> M: <span id="conMod">0</span> S: <span id="conSave">0</span></div>
+            </div>
+            <div class="choices">
+                <div class="stat">WIS <br> <span id="wisVal">0</span><br> M: <span id="wisMod">0</span> S: <span id="wisSave">0</span></div>
+                <div class="stat">INT <br> <span id="intVal">0</span><br> M: <span id="intMod">0</span> S: <span id="intSave">0</span></div>
+                <div class="stat">CHA <br> <span id="chaVal">0</span><br> M: <span id="chaMod">0</span> S: <span id="chaSave">0</span></div>
+            </div>
+            <div class="fts">  
+                <div class="ft">
+                    <span id="backg">Proficiencies</span>
+                    <br>
+                    <a href="#hide1" id="hide1">...</a>
+                    <a href="#" id="show1">...</a><br>
+                    <div id="answer1">
+                        <p>Tools: <span id="tool">...</span></p>
+                        <br>
+                        <p>Lang: <span id="language">...</span></p>
+                    </div>                    
+                </div>              
+                <div class="ft">
+                    <span id="feat">...</span>
+                    <br>
+                    <a href="#hide2" id="hide2">...</a>
+                    <a href="#" id="show2">...</a><br>
+                    <div id="answer2"><span id="featd"></span></div>                    
+                </div>
+                <div class="ft">
+                    <span id="feat">Inventory</span>
+                    <br>
+                    <a href="#hide3" id="hide3">...</a>
+                    <a href="#" id="show3">...</a><br>
+                    <div id="answer3"><span id="invent">This is sample text.</span></div>                    
+                </div>
+            </div>
+            <div class="fts">
+                <div class="ski">
+                    Strength
+                    <br>Athletics <span id="athl">0</span>
+                </div>
+                <div class="ski">
+                    Dexterity
+                    <br>Acrobatics <span id="acro">0</span>
+                    <br>Sleight of Hand <span id="slei">0</span>
+                    <br>Stealth <span id="stea">0</span>
+                </div>
+                <div class="ski">
+                    Intelligence
+                    <br>Arcana <span id="arca">0</span>
+                    <br>History <span id="hist">0</span>
+                    <br>Investigation <span id="inve">0</span>
+                    <br>Nature <span id="natu">0</span>
+                    <br>Religion <span id="reli">0</span>
+                </div>
+                <div class="ski">
+                    Wisdom
+                    <br>Animal Handling <span id="anim">0</span>
+                    <br>Insight <span id="insi">0</span>
+                    <br>Medicine <span id="medi">0</span>
+                    <br>Perception <span id="perc">0</span>
+                    <br>Survival <span id="surv">0</span>
+                </div>
+                <div class="ski">
+                    Charisma
+                    <br>Deception <span id="dece">0</span>
+                    <br>Intimidation <span id="inti">0</span>
+                    <br>Performance <span id="perf">0</span>
+                    <br>Persuasion <span id="pers">0</span>
+                </div>
+            </div>
+            <div class="choices" id="abilities">
+                <div class="choice"></div>
+            </div>
+        </div>
+        <div class="scoreBoard" id="scoreBoard">
+            <div class="choices">
+                <div class="bot"><span id="bg">...</span></div><br>
+                <div class="bot">Trait <br> <span id="Trait">...</span></div>
+                <div class="bot">Ideal <br> <span id="Ideal">...</span></div>
+                <div class="bot">Bond <br> <span id="Bond">...</span></div>
+                <div class="bot">Flaw <br> <span id="Flaw">...</span></div>
+            </div>
+            <p>Story: <br><span id="story">...</span></p>
+        </div>
+    </body>
+    <script src="assets/js/random.js"></script>
+    <script src="assets/js/backg.js"></script>
+    <script src="assets/js/names.js"></script>
+    <script src="assets/js/character.js"></script>
+    
+</html>
